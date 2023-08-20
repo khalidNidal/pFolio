@@ -173,7 +173,39 @@
         line-height: 27.6px;
 
         color: rgb(49, 51, 53);
+        
+        margin-left: auto;
+        width: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 1px solid;
+        animation: type 3s both infinite alternate-reverse steps(29), blink infinite .7s;        
     }
+
+@keyframes type {
+    
+
+
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 314px;
+    }
+}
+
+@keyframes blink {
+    
+
+
+    0% {
+        border-color: rgba(0,0,0,0);
+    }
+    100% {
+        border-color: rgba(0,0,0,.5);
+    }
+}
+
 
     .header span{
         font-family: Raleway, sans-serif;
