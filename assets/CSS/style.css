@@ -1,0 +1,1007 @@
+
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Dosis', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/* loading scrren */
+.loading{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 9999;
+    
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FF3D00 #FF3D00 transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FF3D00 #FF3D00 transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
+
+
+:root{
+        --main-color:#ff724c;
+}
+.scrolltotop{
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+
+}
+.container{
+    width:75%;
+}
+
+    .customer-btn svg{
+        vertical-align: -7px;
+        transition: .5s;
+    }
+
+    .customer-btn{
+        line-height: 2.5;
+        background-color:var(--main-color) ; 
+        height:auto;
+    }
+    
+
+    .nav-link{
+        position: relative;
+    }
+
+   nav .nav-link::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+        transition: .5s;
+        background-color: var(--main-color);
+    }
+
+  nav  .nav-link:hover::after{
+        width: 100%;
+    }
+
+  nav  .nav-link.active::after{
+        width: 100%;
+    }
+
+    .customer-btn:hover svg{
+        transform: rotate(360deg);
+        background-color: black !important;
+        color: white !important;
+
+    }
+
+
+    /* navbar end */
+
+
+    /* header start */
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height:24px ;
+        color:  rgb(59, 59, 59);
+    }
+
+   
+
+    .header{
+        background-image: url('../img/introbg5.png');
+        background-size: 100% ;
+        background-position-y: -30px ;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .header p{
+        font-family: Raleway, sans-serif;
+
+        font-size: 23px;
+
+      font-weight: 500;
+
+        line-height: 27.6px;
+
+        color: rgb(49, 51, 53);
+    }
+
+    .header span{
+        font-family: Raleway, sans-serif;
+
+        font-size: 23px;
+
+      font-weight: 500;
+
+        line-height: 27.6px;
+
+        color: rgb(49, 51, 53);
+    }
+
+    h1{
+        font-family: dosis,sans-serif;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .icons svg{
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid;
+        line-height: 28px;
+        padding: 5px;
+
+        transition: .7s ;
+    }
+
+
+
+    .icons svg:hover{
+        transform: rotate(360deg);
+    }
+
+
+    .icons svg:nth-last-of-type(5){
+        color: #3b5999;
+        border-color: #3b5999;
+    }
+
+    .icons svg:nth-last-of-type(5):hover{
+        color: white;
+        background-color: #3b5999;
+    }
+
+    .icons svg:nth-last-of-type(4){
+        color: #ea4c89;
+        border-color: #ea4c89;
+    }
+
+    .icons svg:nth-last-of-type(4):hover{
+        color: white;
+        background-color: #ea4c89;
+    }
+
+    .icons svg:nth-last-of-type(3){
+        color: #1769ff;
+        border-color: #1769ff;
+    }
+
+    .icons svg:nth-last-of-type(3):hover{
+        color: white;
+        background-color: #1769ff;
+    }
+
+
+    .icons svg:nth-last-of-type(2){
+        color:#0077b5;
+        border-color:#0077b5;
+    }
+
+
+    .icons svg:nth-last-of-type(2):hover{
+        color: white;
+        background-color: #0077b5;
+    }
+
+
+
+    .icons svg:nth-last-of-type(1){
+        color:#dd4b39;
+        
+        border-color:#dd4b39;
+    }
+
+    .icons svg:nth-last-of-type(1):hover{
+        color: white;
+        background-color: #dd4b39;
+    }
+
+
+
+    /* end header */
+
+    /* start about */
+
+
+    .about .numbers{
+        background-color: #4e4e4e;
+    }
+    
+
+    .numbers span{
+        font-size: 26px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;;
+    }
+
+    .about .container > .row{
+        width: 85%;
+        margin:  auto;
+
+
+    }
+
+    .about .describtion {
+        background-color: var(--main-color);
+
+    }
+
+    .about span{
+        
+        top: -15px;
+        left: -15px;
+        padding-right: 10px;
+        /* position: relative; */
+        /* الديف الللي فوق */
+        /* حل المشكلة اني احط مارجين من تحت بعدين بنزلها بالبوزيتشين ريليتيف  */
+        /* الديف الللي تحت */
+        /* حل المشكلة اني احط مارجين من فوق  بعدين برفعها بالبوزيتشين ريليتيف  */
+    }
+
+    .title span:not(.about span , .contact span , .portfolio span ){
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        top: -35px;
+        left: -15px;
+        padding-right: 10px;
+        color: gray;
+    }
+
+    .about .describtion .title h2{
+        font-family:'Dosis', sans-serif ;
+        font-size: 50px;
+        font-weight: 700;
+        width: 75%;
+
+    }
+
+    .about .describtion .title p{
+        
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+
+    }
+
+/* start service */
+
+.services .title h2{
+
+font-family: 'Dosis', sans-serif;
+font-size: 48px;
+
+font-weight: 700;
+
+line-height:  57.6px;
+
+color: rgb(59, 59, 59);
+}
+
+
+.border-custom{
+        border-color: var(--main-color) !important;
+        padding-right: 5px;
+        font-family: 'Raleway', sans-serif;
+ }
+
+ .services p{
+      
+    color: #818181;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 40px;
+
+
+    }
+
+ .services p{
+    width: 75%;
+    margin:  auto;
+ }
+
+ .services .service-item {
+    position: relative;
+ }
+
+ .services .service-item::after{
+        content: '';
+        color: rgba(123, 121, 121, 0.07);
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       z-index: -1;
+
+       
+ }
+
+ .services .service-item:hover:before {
+    height: 100%;
+ }
+
+
+/* service end */
+
+/* strat portfolio */
+
+.portfolio span{
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        top: 18px;
+        left: -15px;
+        padding-right: 10px;
+        color: gray;
+}
+
+.portfolio .title{
+    padding-top:40px ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    padding-top: 30px;
+    background-color: #f3f3f3;
+}
+
+
+.portfolio .nav-link{
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height:  19.5px;
+    color: rgb(95, 95, 95);
+    text-transform: capitalize;
+    border: 1px solid;
+}
+
+
+.portfolio .nav-link.active{
+   background-color:  var(--main-color);
+    color: white;
+    border: none;
+}
+
+
+
+.portfolio .nav-link:hover{
+    border-color: rgb(95, 95, 95); ;
+}
+
+.portfolio .title h2{
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    line-height: 57px;
+    color: rgb(59, 59, 59);
+}
+    
+
+.portfolio .overlay{
+    background-color: rgba(0,0,0,0.27) ;
+    position:absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transform: scaleY(0);
+    transition: .5s .2s;
+
+}
+
+
+.portfolio .overlay svg{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition:.5s .2s;
+
+}
+
+.portfolio-item:hover .overlay{
+transform: scaleY(1);
+} 
+
+.portfolio-item:hover .overlay svg{
+    transform: scale(1)  rotate(360deg);
+  
+} 
+
+.overlay svg:hover{
+    color: var(--main-color);
+    background-color: transparent;
+    border: 0.91px solid white;
+    
+}
+
+
+
+.portfolio .info svg{
+color: var(--main-color);
+}
+.portfolio h3{
+    font-size: 15px;
+    color: #4e4e4e;
+}
+
+ .description p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+    line-height: 16px;
+}
+
+.portfolio .info{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    opacity: 0;
+    transition: .5s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.portfolio-item:hover .info {
+    opacity: 1;
+    bottom: 0;
+
+
+
+}
+.portfolio-item{
+    margin-bottom: 20px;
+}
+
+
+/* end portfolio */
+
+
+
+/* start resume */
+
+.resume .title h2{
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    line-height: 57px;
+    color: rgb(59, 59, 59);
+}
+
+.resume .head svg{
+    background-color: var(--main-color);
+    height: 35px;
+    width:35px;
+    border-radius: 50%;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
+.resume h4{
+    font-size: 14px;
+}
+
+.custom-col{
+    color: var(--main-color);
+
+
+
+}
+.resume .desc .item span{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.resume .desc .item p{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3b3b3b;
+
+
+}
+
+
+.resume .head::after , .resume .item:not(:last-of-type)::after{
+    content: '';
+    position:absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #3b3b3b;
+    top: 2rem;
+    left: 1rem;
+    z-index: -1;
+}
+
+.resume .item::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    background-color: white;
+    left:-36px;
+    top: 0;
+}
+.resume .item:not(:last-of-type)::after{
+    content: '';
+    left:-32px;
+    top: 0;
+}
+
+.resume .item:hover::before{
+    background-color: var(--main-color);
+}
+
+
+.resume .head:hover svg{
+    background-color: rgba(242, 241, 241, 0.377);
+    color: var(--main-color);
+}
+
+
+/* end resume */
+
+
+
+/* start skill */
+
+
+
+
+
+
+
+/* .skill .item h4{
+width: 80%;
+} */
+
+
+.skill .title h2{
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    line-height: 57px;
+    color: rgb(59, 59, 59);
+}
+
+.skill .head svg{
+    background-color: var(--main-color);
+    height: 35px;
+    width:35px;
+    border-radius: 50%;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
+.skill h4{
+    font-size: 14px;
+}
+
+.custom-col{
+    color: var(--main-color);
+
+
+
+}
+.skill .desc .item span{
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.skill .desc .item p{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3b3b3b;
+
+
+}
+
+
+.skill .head::after , .skill .item:not(:last-of-type)::after{
+    content: '';
+    position:absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #3b3b3b;
+    top: 2rem;
+    left: 1rem;
+    z-index: -1;
+}
+
+.skill .item::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    background-color: white;
+    left:-36px;
+    top: 0;
+}
+.skill .item:not(:last-of-type)::after{
+    content: '';
+    left:-32px;
+    top: 0;
+}
+
+.skill .item:hover::before{
+    background-color: var(--main-color);
+}
+
+
+.skill .head:hover svg{
+    background-color: rgba(242, 241, 241, 0.377);
+    color: var(--main-color);
+}
+
+
+
+.skill .item .bar{
+    width: 100%;
+    height: 5px;
+    background-color: #3b3b3b;
+    border-radius: 10px ;
+    display: inline-block;
+}
+
+.skill .item .bar::after{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    height: 100%;
+    width: 80%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+
+
+.skill .item [percent="80%"] .bar::after{
+width: 80%;
+
+}
+
+
+
+.skill .item[percent="80%"] h4{
+    width: 80%;
+}
+
+
+.skill .item[percent="70%"] .bar::after{
+    width: 70%;
+    
+    }
+
+    .skill .item[percent="70%"] h4{
+        width: 70%;
+    }
+    
+
+
+.skill .item[percent="70%"] .bar::after{
+  width: 70%;
+        
+ }
+
+ .skill .item[percent="55%"] .bar::after{
+    width: 55%;
+    
+    }
+
+    .skill .item[percent="55%"] h4{
+        width: 55%;
+    }
+    
+/* end skill */
+
+
+
+
+
+/* start pic */
+.pic{
+   
+   
+     background-image: linear-gradient(rgba(59,59,59,.75), rgba(59,59,59,.75)), url(../img/brandbg.png);
+    background-size: cover;
+    
+}
+
+
+.pic a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.pic a:hover{
+    background-color: var(--main-color) ;
+    border-color: var(--main-color) !important ;
+}
+
+.pic p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+     color: rgb(243, 243, 243);
+     margin-bottom: 10px;
+     margin-top: 10px;
+     
+
+
+}
+
+/* end pic  */
+
+
+
+/* start testi */
+
+
+.testi .title h2{
+    font-size: 48px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    line-height: 57px;
+    color: rgb(59, 59, 59);
+}
+
+
+
+.testi .info {
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+
+
+}
+
+.testi.info p {
+font-size: 14px;
+font-style: italic;
+
+}
+
+
+.testi .info:hover{
+    background-color: #5b5b5b;
+}
+
+.testi .info:hover p,.testi .info:hover i{
+   
+    color: white;
+}
+.testi.info svg{
+    font-size: 22px;
+}
+
+.testi .carousel-indicators{
+margin-bottom: -20px;
+
+
+}
+
+
+
+
+
+.testi .carousel-indicators button{
+
+height: 10px;
+width: 10px;
+border :1px solid var(--main-color);
+border-radius: 50%;
+
+}
+
+
+
+.testi .carousel-indicators .active{
+
+background-color: var(--main-color);
+}
+
+
+/* start contact */
+.contact{
+    background-image: 
+    linear-gradient(rgba(255,114,76,.85),rgba(255,114,76,.85))
+    ,url("../img/contactbg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact input:focus , .contact textarea:focus{
+
+    box-shadow: none !important;
+    border: 1px solid white !important;
+}
+
+::placeholder{
+    color: white !important;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.btn-custom{
+    color: #3b3b3b;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 14px 0;
+}
+
+.custom-icon{
+    display: inline-block;
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 13px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 15px;
+    vertical-align: -17px;
+
+}
+/* end contact */
+
+
+
+/* start map */
+.map .contact-info{
+    background-color: #282828;
+}
+
+.map h3{
+    color: white;
+}
+
+
+
+
+.map .contact-item svg{
+    background-color: white;
+    color: var(--main-color);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-size: x-small;
+}
+.map .contact-item svg:hover{
+    background-color: var(--main-color);
+    color:white;
+    transform: rotate(360deg) ;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.map .contact-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+
+
+}
+
+.map .contact-item svg{
+    
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+/* end map */
+
+
+
+
+/* footer start */
+footer .Tarikeamin{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
