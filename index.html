@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="vendor/CSS/all.min.css">
     <!--custom css-->
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- animate css  -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
    
 
 
@@ -109,47 +113,54 @@
 
 
 
-
-
-
-
+    
 
       <!-- start about -->
       <section id="about" class="about">
         <div class="container"> 
           <div class="row">
-            <div class="col-lg-6 numbers text-white py-5 text-center px-5 d-flex justify-content-center align-items-center ">
-              <div class="row">
-                <div class="col-md-6 border-bottom border-white border-end py-3  ">
+            
+            <div data-aos="fade-left" class=" col-lg-6 numbers text-white py-5 text-center px-5 d-flex justify-content-center align-items-center ">
+              
+                <div class="row">
                   
-                  <span class="text-white d-block" > 482 </span>
-                  <p>project complaet</p>
-
-                </div>
-
-                <div class="col-md-6 border-bottom border-white py-3 text-white">
-
-                  <span class="text-white" >482</span>
-                  <p>project complaet</p>
+                  <div class="col-md-6 border-bottom border-white border-end py-3  ">
+                    
+                    <span class="text-white d-block" > 482 </span>
+                    <p>project complaet</p>
+  
+                  </div>
+  
+                  <div class="col-md-6 border-bottom border-white py-3 text-white">
+  
+                    <span class="text-white" >482</span>
+                    <p>project complaet</p>
+                    
+                  </div>
+  
+                  <div class="col-md-6 border-end py-3 ">
+                    <span class="text-white" >482</span>
+                    <p>project complaet</p>
+                    
+                  </div>
+  
+                  <div class="col-md-6 py-3 ">
+                    <span class="text-white" >482</span>
+                    <p>project complaet</p>
+                    
+                  </div>
+  
+  
                   
-                </div>
-
-                <div class="col-md-6 border-end py-3 ">
-                  <span class="text-white" >482</span>
-                  <p>project complaet</p>
-                  
-                </div>
-
-                <div class="col-md-6 py-3 ">
-                  <span class="text-white" >482</span>
-                  <p>project complaet</p>
-                  
-                </div>
               </div>
+              
             </div>
 
+           
 
-            <div class="describtion col-lg-6 p-5">
+
+            <div class="describtion col-lg-6 p-5"   data-aos="fade-right">
+
               <div class="title text-white">
                 <span class="text-uppercase border-bottom border-wihte text-white position-relative" >about</span>
                 <h2>A few words about us</h2>
@@ -168,8 +179,8 @@
               </div>
 
             </div>
-          </div>
         </div>
+      </div>
 
       </section>
       <!-- end about -->
@@ -198,7 +209,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-3 service-item text-center mt-5 ">
+            <div class="col-md-3 service-item text-center mt-5 " data-aos="flip-right" data-aos-duration="1000">
              
               <img src="./assets/img/SER-1.png">
               <h3  class="mb-3 mt-4">Creativity</h3>
@@ -207,7 +218,7 @@
             </div>
 
 
-            <div class="col-md-3 service-item text-center mt-5 ">
+            <div class="col-md-3 service-item text-center mt-5 " data-aos="flip-right" data-aos-duration="1000">
              
               <img src="./assets/img/SER-2.png">
               <h3 class="mb-3 mt-4">Web Design</h3>
@@ -216,7 +227,7 @@
             </div>
 
 
-            <div class="col-md-3 service-item text-center mt-5 ">
+            <div class="col-md-3 service-item text-center mt-5 " data-aos="flip-right" data-aos-duration="1000">
              
               <img src="./assets/img/SER-3.png" >
               <h3 class="mb-3 mt-4">Photography</h3>
@@ -225,7 +236,7 @@
             </div>
 
 
-            <div class="col-md-3 service-item text-center mt-5 ">
+            <div class="col-md-3 service-item text-center mt-5 " data-aos="flip-right" data-aos-duration="1000">
              
               <img src="./assets/img/SER-4.png ">
               <h3 class="mb-3 mt-4">Advetising</h3>
@@ -1096,5 +1107,8 @@
 <script src="vendor/JS/bootstrap.bundle.min.js"></script>
 <script src="Vendor/JS/main.js"></script>
 <script src="Vendor/JS/all.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>
