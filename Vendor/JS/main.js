@@ -1,4 +1,6 @@
 let servicesection =document.getElementById('services');
+let aboutsec =document.getElementById('about');
+
 let portfolioSection = document.getElementById('portfolio');
 let resumeSection = document.getElementById('resume');
 let contactSection = document.getElementById('contact');
@@ -12,8 +14,17 @@ console.log(resumeSection)
 //start changing navbar
 navbar.style.transition='.5s'
 window.addEventListener('scroll', function(){
+    if(window.scrollY>=navbar.offsetTop){
+        navbar.style.backgroundColor = '#f3f3f3';
+        scroll.style.opacity = '0';
+    }
 
-if(window.scrollY<servicesection.offsetTop){
+// if(window.scrollY<servicesection.offsetTop){
+//     scroll.style.opacity = '0';
+//     navbar.style.backgroundColor = 'transparent';
+// }
+
+if(window.scrollY<aboutsec.offsetTop){
     scroll.style.opacity = '0';
     navbar.style.backgroundColor = 'transparent';
 }
@@ -74,6 +85,8 @@ loading.style.visibility='hidden'
 loading.style.overflow='auto'
 
 })
+
+
 
 // setTimeout( function(){ 
 //     loading.style.display="none"
